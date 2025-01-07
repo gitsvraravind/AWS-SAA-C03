@@ -13,3 +13,16 @@
 ###### 3. Route tables - dictate traffic flow between subnets and control how traffic is routed within the VPC. It is like a sign post.
 ###### 4. Security Groups - Virtual firewalls allowing you to manage inbound and outbound traffic
 ###### 5. Network Access Control Lists (NACLs) - Additional layer of network security by acting as packet filters, governing traffic at the subnet levels. 
+
+###### 1. NACLs and Security Groups - Control Flow of Packets using the following methods
+###### 1A. Stateful
+######     Stateful means that the security control remembers which packets and interactions were allowed past in one direction and allows them back through the other way.
+###### 1B. Stateless 
+######     Stateless means that the security control has no memory of previous events and therefore a packet that has been let past in one direction will not be let back through unless specifically authorized.
+
+#### Security Groups are stateful and therefore need to create inbound rules to handle these.Outbound rules is automatically authorized with the same criteria.
+#### NACLs are stateless and therefore inbound and outbound rules must be created. 
+
+###### SGs act as the first line of defense, allowing customers to meticulously specify which types of traffic are permitted to access their resources. 
+
+
