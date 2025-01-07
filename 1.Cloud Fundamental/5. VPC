@@ -20,9 +20,15 @@
 ###### 1B. Stateless 
 ######     Stateless means that the security control has no memory of previous events and therefore a packet that has been let past in one direction will not be let back through unless specifically authorized.
 
-#### Security Groups are stateful and therefore need to create inbound rules to handle these.Outbound rules is automatically authorized with the same criteria.
-#### NACLs are stateless and therefore inbound and outbound rules must be created. 
+####    Security Groups are stateful and therefore need to create inbound rules to handle these.Outbound rules is automatically authorized with the same criteria.
+####    Security Groups act as the first line of defence, allowing customers to meticulously specify which types of traffic are permitted to access their resources. 
+####    Security Group act at the instance level and can be configured to act over more than one subnet at any time. 
 
-###### SGs act as the first line of defense, allowing customers to meticulously specify which types of traffic are permitted to access their resources. 
+####    NACLs are stateless and therefore inbound and outbound rules must be created. 
+####    Granular control over the flow of traffic entering and exiting the subnets. 
+####    They do not remember which service sent the inbound request and hence it is # stateless. You need to define * specific outbound rules * or * all outbound rules is blocked *. 
 
+######  
+
+##### 
 
