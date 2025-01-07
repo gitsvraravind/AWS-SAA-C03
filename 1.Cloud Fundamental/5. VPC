@@ -1,0 +1,15 @@
+##### VPC - Foundational Infrastructure Element 
+###### 1. Dedicated, logically isolated section of the AWS Cloud. 
+###### 2. Within this VPC , you have full control over the network architecture , enabling you to design,
+######    configure and manage your network resources.
+###### 3. AWS VPC is a virtual network that allows you to define your IP address range, create subnets and manage network settings. 
+###### 4. It is a gated community within a city. 
+######    Each VPC is self contained and has its own rules and regulations. 
+######    The AWS resources within each neighborhood can communicate with each other freely but there are gates (security groups and NACLs) controlling who can enter or exit the neighborhood.
+
+#### Key Components of AWS VPCs
+###### 1. IP addressing - Define IP address range.You cannot have two houses with the same street name and number.
+###### 2. Subnets - Subdivisions with VPC , located on a specific availability zones. Subnets are like streets and each house must have a unique number on the street. 
+###### 3. Route tables - dictate traffic flow between subnets and control how traffic is routed within the VPC. It is like a sign post.
+###### 4. Security Groups - Virtual firewalls allowing you to manage inbound and outbound traffic
+###### 5. Network Access Control Lists (NACLs) - Additional layer of network security by acting as packet filters, governing traffic at the subnet levels. 
